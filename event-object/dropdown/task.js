@@ -4,10 +4,9 @@ const textLink = document.getElementsByClassName('dropdown__link');
 for(let i = 0; i < itemValue.length; i++) {
     itemValue[i].onclick = function(){        
        let list = this.closest(".dropdown");
-       list.querySelector(".dropdown__list").classList.add("dropdown__list_active");       
+       list.querySelector(".dropdown__list").classList.toggle("dropdown__list_active");       
     };
 }
-
 
 for(let i = 0; i < textLink.length; i++) { 
     textLink[i].onclick = function(){        
